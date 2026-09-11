@@ -148,7 +148,7 @@ A FastTrack proposal moves through a series of statuses. Each transition is trig
    - If "For" votes reach the sandbox threshold (e.g. 30% of total veNEAR), the proposal graduates to `Scheduled`.
    - If the sandbox duration expires without reaching the threshold, the proposal becomes `Defeated`.
 
-3. **Scheduled** — The proposal is queued to start full voting on the next Monday (00:00 CET).
+3. **Scheduled** — The proposal is queued to start full voting on the next Monday (00:00 UTC).
    - Up to `max_active_proposals` proposals can occupy active slots (Sandbox / Scheduled /
      Voting / Timelock) simultaneously. If all slots are full, additional approved proposals
      park in the FIFO pending queue with status `Queued` and are promoted as slots free up.

@@ -933,7 +933,7 @@ mod long_flow_tests {
             ProposalStatus::Scheduled
         );
 
-        // Scheduled start is the next Monday CET; reading at that boundary -> Voting.
+        // Scheduled start is the next Monday UTC; reading at that boundary -> Voting.
         let voting_start = next_voting_start_ns(TEST_NOW_NS);
         assert_eq!(
             status_at(&contract, id, voting_start),
